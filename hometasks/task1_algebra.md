@@ -60,7 +60,7 @@ WHERE PC.SPD >= 450
 ```
 SELECT DISTINCT P.MK, TB.SPD
 FROM TB
-JOIN product P ON P.MD = TB.MD
+JOIN P ON P.MD = TB.MD
 WHERE TB.HD >= 10
 ```
 8. Найдите номера моделей и цены всех имеющихся в продаже продуктов (любого типа) производителя ’B’
