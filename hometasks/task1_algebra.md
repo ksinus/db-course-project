@@ -58,7 +58,7 @@ WHERE PC.SPD >= 450
 ```
 7. Для каждого производителя, выпускающего планшеты c объёмом жесткого диска не менее 10 ГБ, найти скорости таких планшетов
 ```
-SELECT DISTINCT P.maker, TB.speed
+SELECT DISTINCT P.MK, TB.SPD
 FROM TB
 JOIN product P ON P.MD = TB.MD
 WHERE TB.HD >= 10
@@ -84,7 +84,16 @@ JOIN PR ON P.MD = PR.MD
 WHERE P.MK = 'B'
 ```
 9. Найти производителей, которые выпускают ПК или планшеты с объемом оперативной памяти не менее 2ГБ
-``
+```
+SELECT DISTINCT P.MK
+FROM P
+WHERE P.TP = 'PC'
+UNION
+SELECT DISTINCT P.MK
+FROM TB
+JOIN P ON P.MD = TB.MD
+WHERE TB.RAM >= 2
+```
 10. Найдите производителей, выпускающих ПК, но не планшеты
 ```
 SELECT DISTINCT P.MK
