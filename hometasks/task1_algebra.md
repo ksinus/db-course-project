@@ -64,7 +64,25 @@ JOIN product P ON P.MD = TB.MD
 WHERE TB.HD >= 10
 ```
 8. Найдите номера моделей и цены всех имеющихся в продаже продуктов (любого типа) производителя ’B’
-``
+```
+SELECT DISTINCT P.MD,
+                PC.PRC
+FROM P
+JOIN PC ON P.MD = PC.MD
+WHERE P.MK = 'B'
+UNION
+SELECT DISTINCT P.MD,
+                TB.PRC
+FROM P
+JOIN TB ON P.MD = TB.MD
+WHERE P.MK = 'B'
+UNION
+SELECT DISTINCT P.MD,
+                PR.PRC
+FROM P
+JOIN PR ON P.MD = PR.MD
+WHERE P.MK = 'B'
+```
 9. Найти производителей, которые выпускают ПК или планшеты с объемом оперативной памяти не менее 2ГБ
 ``
 10. Найдите производителей, выпускающих ПК, но не планшеты
