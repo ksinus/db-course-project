@@ -16,7 +16,7 @@ Dockerfile-compose файле. Из директории с файлом:
 Завершение работы: `` docker-compose down ``
 
 ## Концептуальная модель
-![](./pic/concept_model.svg)
+![](./pic/concept_model.drawio.svg)
 ## Логическая модель
 
 ## Физическая модель
