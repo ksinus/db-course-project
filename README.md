@@ -58,7 +58,7 @@ Dockerfile-compose файле. Из директории с файлом:
 |---|---|---|---| 
 | advert_id | advert`s ID | INTEGER | |
 | price_amt | advert`s price | INTEGER | |
-| advert_dt | price setting day | DATE | |
+| сhange_price_dt | price setting day | DATE | |
 
 ## Выполнение технического задания по проекту
 
