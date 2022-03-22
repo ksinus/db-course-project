@@ -18,9 +18,8 @@ Dockerfile-compose файле. Из директории с файлом:
 ## Концептуальная модель
 ![](./pic/concept_model.drawio.svg)
 ## Логическая модель
-
+![](./pic/logic_model.drawio.svg)
 ## Физическая модель
-
 #### Users
 | Field name | Description | Data type | Restrictions |
 |---|---|---|---| 
