@@ -15,42 +15,42 @@ Dockerfile-compose файле. Из директории с файлом:
 #### Users
 | Field name | Description | Data type | Restrictions |
 |---|---|---|---| 
-| user_id | user`s ID | SERIAL |  |
-| user_nm |  user`s name | VARCHAR(20) |  |
-| user_last_nm | user`s lastname | VARCHAR(20) | |
+| user_id | user`s ID | SERIAL | NOT NULL UNIQUE PRIMARY KEY |
+| user_nm |  user`s name | VARCHAR(20) | NOT NULL |
+| user_last_nm | user`s lastname | VARCHAR(20) | NOT NULL |
 | user_birth_dt | user`s lastname | DATE | |
-| mobile_phone_no | user`s phone number | INTEGER | |
-| email_no | user`s email address |  VARCHAR(40) | |
+| mobile_phone_no | user`s phone number | INTEGER | UNIQUE |
+| email_no | user`s email address |  VARCHAR(40) | UNIQUE |
 | card_no | user`s card number |  VARCHAR(40) | |
 
 #### Adverts
 | Field name | Description | Data type | Restrictions |
 |---|---|---|---| 
-| advert_id | advert`s ID | SERIAL | |
-| advert_title | title | VARCHAR(20) | |
-| advert_desc | description  | VARCHAR(350) | |
-| category_id | ID Category of the advert  | VARCHAR(20) | |
-| advert_dt | date of creation | DATE |
+| advert_id | advert`s ID | SERIAL | NOT NULL UNIQUE PRIMARY KEY |
+| advert_title | title | VARCHAR(20) | NOT NULL |
+| advert_desc | description  | VARCHAR(350) | NOT NULL |
+| category_id | ID Category of the advert  | VARCHAR(20) | NOT NULL |
+| advert_dt | date of creation | DATE |  |
 | author_id | ID of the author | INTEGER | |
 
 #### Categories
 | Field name | Description | Data type | Restrictions |
 |---|---|---|---| 
-| category_id | category`s ID | INTEGER | |
-| category_title | title | VARCHAR(20) | |
+| category_id | category`s ID | INTEGER | NOT NULL |
+| category_title | title | VARCHAR(20) | NOT NULL |
 
 #### Favorites
 | Field name | Description | Data type | Restrictions |
 |---|---|---|---| 
-| advert_id | advert`s ID | INTEGER | |
-| user_id | user`s ID | INTEGER |  |
+| advert_id | advert`s ID | INTEGER | NOT NULL |
+| user_id | user`s ID | INTEGER | NOT NULL  |
 
 #### Advert_price_history
 | Field name | Description | Data type | Restrictions |
 |---|---|---|---| 
-| advert_id | advert`s ID | INTEGER | |
-| price_amt | advert`s price | INTEGER | |
-| сhange_price_dt | price setting day | DATE | |
+| advert_id | advert`s ID | INTEGER | NOT NULL |
+| price_amt | advert`s price | INTEGER | NOT NULL |
+| сhange_price_dt | price setting day | DATE | NOT NULL |
 
 ## Выполнение технического задания по проекту
 
