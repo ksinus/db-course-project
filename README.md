@@ -42,7 +42,7 @@ Dockerfile-compose файле. Из директории с файлом:
 | advert_id | advert`s ID | SERIAL | NOT NULL UNIQUE PRIMARY KEY |
 | advert_title | title | VARCHAR(20) | NOT NULL |
 | advert_desc | description  | VARCHAR(350) | NOT NULL |
-| category_id | ID Category of the advert  | VARCHAR(20) | NOT NULL |
+| category_id | ID Category of the advert  | INTEGER | NOT NULL |
 | advert_dt | date of creation | DATE |  |
 | author_id | ID of the author | INTEGER | |
 
