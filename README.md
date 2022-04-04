@@ -65,15 +65,5 @@ Dockerfile-compose файле. Из директории с файлом:
 | price_amt | advert`s price | INTEGER | NOT NULL |
 | сhange_price_dt | price setting day | DATE | NOT NULL |
 
-## Выполнение технического задания по проекту
-
-1. См 
-2. См
-3. Папка DDL_scripts
-4. Файлы вида Fill*.sql
-5. Файлы вида 10*.sql
-6. Файл RequestHard.sql
-7. MakeIndexes
-8. Представления
-9. Процедуры
-10. Триггеры
+## Выполнение технического задания по проекту  
+TODO
