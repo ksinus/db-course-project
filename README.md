@@ -21,9 +21,12 @@ Dockerfile-compose файле. Из директории с файлом:
 Подключение к контейнеру: ``напишу позже``  
 Завершение работы: `` docker-compose down ``
 ## Концептуальная модель
-![](./pic/concept_model.png)
+<img src="./pic/concept_model.png" width="500"/>  
+
+
 ## Логическая модель
-![](./pic/logic_model.png)
+<img src="./pic/logic_model.png" width="600"/>  
+
 ## Физическая модель
 #### Users
 | Field name | Description | Data type | Restrictions |
