@@ -69,4 +69,4 @@ Dockerfile-compose файле. Из директории с файлом:
 | сhange_price_dt | price setting day | DATE | NOT NULL |
 
 ## Выполнение технического задания по проекту  
-TODO
+См. `README.md` в папке `DDL_scripts`.
