@@ -42,8 +42,7 @@ FROM advert_price_history;
     Показывает автора объявления,
     среднюю цену его объявлений,
     каким по счёту идёт конкретное объявление,
-    самую низкую цену по категории
-*/
+    самую низкую цену по категории */
 SELECT author_id,
        category_id,
        ROW_NUMBER() OVER (PARTITION BY author_id ORDER BY advert_dt)                  as advert_no,
