@@ -54,3 +54,4 @@ SELECT advert_id
 FROM adverts
 JOIN users ON users.user_id = adverts.author_id
 WHERE date_part('year', user_birth_dt) < 2004;
+
