@@ -22,7 +22,7 @@ ORDER BY author_id, advert_dt DESC;
 например, сделать топ-объявления автора по дате или же, поменяв параметр сортировки, по каким-то другим признакам */
 SELECT author_id,
        advert_id,
-       ROW_NUMBER() OVER (PARTITION BY author_id, advert_dt) as advert_no
+       ROW_NUMBER() OVER (PARTITION BY author_id ORDER BY advert_dt) as advert_no
 FROM Users
          JOIN Adverts ON author_id = user_id
 ORDER BY author_id;
