@@ -43,7 +43,7 @@ FROM Users
 --- 2 Скроем персональные данные клиента: email
 CREATE OR REPLACE VIEW hideEmail AS
 SELECT user_id,
-       partial_email(email_no::text)
+       partial_email(email_no::text) AS partial
 FROM Users;
 
 --- 3 Скроем персональные данные клиента: имя и фамилию
